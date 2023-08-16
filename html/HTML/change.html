@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin : 0 ;
+      padding : 0;
+    }
+    :root{
+        --color:black;
+        --color1:white;
+    }
+    html,body {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);
+    }
+    .container{
+        width: 200px;
+        height: 200px;
+        background-color: var(--color1);
+    }
+
+</style>
+<script>
+  //  function dark(){
+        var root =document.querySelector(':root');
+         var rootStyle=getComputedStyle(root);
+        var red =rootStyle.getPropertyValue('--color');
+        root.style.setProperty('--color','red');
+   // }
+</script>
+<body>
+    <div class="container"></div>
+</body>
+</html>

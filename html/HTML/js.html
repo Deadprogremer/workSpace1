@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin : 0 ;
+      padding : 0;
+    }
+    html,body {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .square{
+        width: 40vmax;
+        height: 40vmax;
+        background-color: royalblue;
+    }
+    h1{
+        cursor: pointer;
+    }
+    .hide{
+        animation:stop 5s ease-in-out infinite;
+    }
+    @keyframes stop {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(0.75);
+        }
+    }
+</style>
+<body>
+    <div class="square"></div>
+    <h1 class="chan">click hide the square</h1>
+    <script>
+        var can =document.querySelector(".chan").addEventListener("click",()=>{
+            document.querySelector(".square").classList.toggle("hide");
+        });
+    </script>
+</body>
+</html>

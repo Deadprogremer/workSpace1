@@ -1,0 +1,21 @@
+@media (max-width:600px) {
+    .header-inner{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .header-inner .left{
+        width: 100%;
+        height: 50%;
+        /* display: flex; */
+        /* flex-direction: row;  */
+    }
+    .header-inner .right {
+        width: 100%;
+        height: 50%;
+    }
+    .header-inner .right img{
+        width: 100%;
+        height: 100%;
+    }
+}

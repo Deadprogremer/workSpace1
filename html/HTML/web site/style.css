@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+.home {
+    display: flex;
+}
+.sidebar {
+    width: 10vw;
+    background-color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start ;
+    align-items: flex-start;
+}
+.sidebar nav {
+    position: fixed;
+}
+.sidebar nav ul li {
+    list-style: none;
+}
+.sidebar nav ul li:hover {
+    background-color: rgb(65, 105, 225);
+    transition: all 1s ease-in;
+}
+.sidebar nav ul li a {
+    color: white;
+}
+.sidebar nav ul li a:hover {
+    color: crimson;
+    transition: all 0.1s ease-in;
+}
+ion-icon {
+    width: 6vw;
+    height: 5vh;
+    margin-top:25px;
+    padding-bottom: 11px;
+    transition: all 3s ease;
+}
+.main {
+    width: 94vw;
+    background-color: black;    
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.margin {
+    margin-top: 2vmax;
+}
+.main img {
+    width:70vw;
+}
+h1 {
+    font-size: 4vmax;
+    animation: slideright 3s ease  ;
+}
+h2 {
+    font-size: 2vmax;
+    animation: slideright 6s ease ;
+}
+.about { 
+    width: 93vw;
+    background-color: black;
+    color: white ;
+    font-size: 3vmax;
+}
+.contant {
+    font-size: 1vmax;
+    margin-top: 4vmax;
+    animation: slideright 5s ease-in;
+}
+.about h1 {
+    font-size: 4vmax;
+    margin-bottom: 20px;
+}
+.menu {
+    width: 50px;
+    height: 4vh;
+    background-color: black;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: crimson;
+    margin-top: 3px;
+}
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: black;
+    border-bottom: 1px solid white;
+    display: none;
+}
+header nav {
+    position: fixed;
+    border-bottom: 1px solid white;
+    display: none;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: red;
+    justify-self: center;
+    align-self: center;
+}
+header nav ul li a:hover {
+    transition: all 0.5s ease;
+    color: crimson;
+}
+header nav ul li:hover {
+    transition: all 1s ease;
+    background-color: royalblue;
+}
+header nav ul li ion-icon {
+    color: red;
+}
+p {
+    border-bottom: 1px solid white;
+    font-size: 2vmax;
+}
+.skillbarstyle {
+    height: 20px;
+    background-color: white;
+    text-align: center;
+
+}
+.skillbar {
+    width: 99%;
+}
+.skillbar1 {
+    width: 85%;
+}
+.skillbar2 {
+    width: 40%;
+}
+.skillbar3 {
+    width: 7%;
+}
+.skillbar4 {
+    width: 2%;
+}
+h6 {
+    font-size: 1vmax;
+    color: black;
+}
+.animate{
+    animation:slideright 5s ease 2;
+}
+.photo{
+    width: 100%;
+
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;  
+}
+.photo img{
+    width: 100%;
+    height: 30vmax;
+    margin-top: 5vmax;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: moveing 3s ease ;
+}
+.dot:hover{
+    background-color: crimson;
+    box-shadow: 1px 0px royalblue;
+}
+.cover{
+    width: 80vmax;
+    height: 40vmax;
+    position: fixed;
+    top: 0;
+}
+.contact{
+    width: 100%;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+form label{
+    font-size: 30px;
+}
+form input{
+    display: block;
+    width: 40%;
+    height: 4vh;
+    margin-top: 10px;
+}
+.submit{
+    margin-top: 20px;
+    width: 15vw;
+    height: 9vh;
+    background-color: white;
+    font-size: 2vmax;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+}
+.submit:hover{
+    transition: all 1.5s ease-in-out;
+    background-color:black;
+    color: white;
+    box-shadow: 5px 5px white;
+}
+.message{   
+    height: 10vh;
+}
+.contact_icons{
+    display: flex;
+    margin-top: 10vmax;
+    justify-content: center;
+    align-items: center;
+}

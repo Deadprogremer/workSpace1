@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 100vw;
+}
+.sidebar{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: yellow;
+    display: none;
+}
+nav ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.main{
+    width: 80vw;
+    background: linear-gradient(135deg, rgb(171, 95, 249) 0%, rgb(121, 70, 222) 36.66%, rgb(26, 185, 234) 100%);
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    cursor: pointer;
+}

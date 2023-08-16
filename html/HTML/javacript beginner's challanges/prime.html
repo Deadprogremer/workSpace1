@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button id="submit" onclick="myFunction()">click</button>
+    <script>
+        var num =document.getElementById("num").value;
+        function myFunction(){
+            for(var i=3;i<=num;i++){
+                var isprime=true;
+                for (var j=2;j<i;j++) {
+                    if(i%j==0){
+                        isprime=false;
+                        break;
+                    }
+                }if(isprime==true){
+                document.write(num+" is a prime number");
+                } 
+            }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <button class="note" >Note</button>
+    <div class="container">
+        <div class="box">
+            <p></p>
+        </div>
+    </div>
+    <script>
+        var note=document.getElementsByClassName("note");
+        note[0].addEventListener("click",function(){
+            var p=document.getElementsByClassName("box");
+            sessionStorage.setItem("store",p);
+            var get = sessionStorage.getItem("store");
+            p[0].innerHTML="hello world";
+        });
+
+    </script>
+</body>
+</html>

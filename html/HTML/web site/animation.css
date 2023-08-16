@@ -1,0 +1,23 @@
+@keyframes slideright {
+    from{
+          transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes moveing {
+    0%{
+        margin-left: 50px;
+        background-color: red;
+    }
+    50%{
+        margin-left: 30px;
+        background-color: yellow;
+        
+    }
+    100%{
+        margin-left: 10px;
+        background-color: green;
+    }
+}

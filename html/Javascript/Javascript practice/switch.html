@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfunction(){
+            var area =parseInt( prompt("Enter a  1.circle  2.triangle  3.rectangle",));
+            switch (area){
+                case 1:
+                    var r=parseInt(prompt("Enter the radius of the circle",));
+                    alert("The area of circle is = "+(3.14*r**2)+" meter square");
+                    break;
+                case 2:
+                    var h=parseInt(prompt("Enter the hieght  of the triangle",));
+                    var b=parseInt(prompt("Enter the base  of the triangle",));
+                    alert("The area of triangle is = "+((h*b)/2)+" meter square");
+                    break;
+                case 3:
+                    var l=parseInt(prompt("Enter the lenght of the rectangle",));
+                    var b=parseInt(prompt("Enter the breath  of the rectangle",));
+                    alert("The area of triangle is = "+(l*b)+" meter square");
+                    break;
+                default:
+                    alert("Enter a valid data");
+                }
+        }
+        setInterval(myfunction,1000);
+    </script>
+</body>
+</html>

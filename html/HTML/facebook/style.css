@@ -1,0 +1,98 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+html,
+body {
+    width : 100%;
+    height : 100%;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 10vh;
+}
+header nav{
+      background-color: white;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+  width: 10vw;
+  height: 10vh;
+  align-self: flex-start;
+  justify-self: start;
+}
+header nav ul{
+  width: 90vw;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul li{
+  list-style: none;
+  margin-left: 1vmax;
+}
+header nav ul li input{
+  width: 15vw;
+  display: block;
+  height: 5vh;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5vmax;
+  border: 1px solid #222;
+}
+header nav ul li a{
+  color: #85D1FF;
+  font-size: 1.3vmax;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  text-align: center;
+}
+.Log:hover{
+  box-shadow: 3px 3px black;
+  transition: all 0.6s ease;
+}
+.Log{
+  width:5vmax;
+  height: 3vmax;
+  text-align: center;
+  background-color: #1A6ED8;
+  color: white;
+  font-size: 1.5vmax;
+  border-radius: 5px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.mainimg{
+    width: 100%;
+    background: linear-gradient( #93B4DD );
+}
+.main  img{
+    width: 60vw;
+    height: 60vh;
+}
+  @media (max-width:992px) {
+    header nav ul li input{
+        display: none;
+    }
+    header nav ul li a{
+        display: none;
+    }
+    header nav ul{
+        margin-top: 20px;
+    }
+    .Log{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }

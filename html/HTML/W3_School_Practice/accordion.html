@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+</head>
+<link rel="stylesheet" href="center.css">
+<style>
+    body{
+        justify-content: flex-start;
+    }
+    .container{
+        width: 20vw;
+        height: 100%;
+        background-color: black;
+    }
+    .container .accordion{
+        background-color: #eee;
+        border: none;
+        width: 100%;
+        height: 10vh;
+        cursor: pointer;
+        color: #444;
+        text-align: left;
+        font-size: 2vmax;
+        font-weight: 200;
+    }
+    .panel p::selection{
+        background-color: black;
+        color: yellow;  
+    }
+    .accordion::selection{
+        background-color: black;
+        color: yellow;
+    }
+    .container .panel{
+        overflow: hidden;
+        display: none;
+        background-color: #eee; 
+
+    }
+    .container .panel p{
+        text-align: justify;
+        line-height: 22.5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+    }
+    .active,.accordion:hover{
+        background-color: #ccc;
+    }
+    .accordion::after{
+        content: '\02795';
+        font-size: 10px;
+        color: black;
+        float: right;
+        margin-top: 6px;
+    }
+    .active::after{
+        content: "\2796";
+    }
+    .box{
+        display: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, repudiandae! Voluptate provident corporis tempora? Sed nihil accusantium placeat nisi! Consectetur ea quia odit nam nostrum praesentium repudiandae pariatur suscipit ut.
+            </p>
+        </div>
+            <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio nostrum, perspiciatis recusandae unde minima esse, hic praesentium nam consequuntur neque labore eaque totam sit officiis amet dolores tempora cum.
+            </p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, vel facere repellendus quam sit    distinctio eum modi sed! Sint eaque quo ex molestiae possimus a consequuntur omnis non dolores numquam.
+            </p>
+        </div>
+    </div>
+    <script>
+        var accordion=document.getElementsByClassName("accordion");
+        var i;
+        for(i = 0; i < accordion.length; i++){
+            accordion[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+                var panel=this.nextElementSibling;
+                if(panel.style.display=="block"){
+                    panel.style.display="none";
+                }
+                else{
+                    panel.style.display="block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

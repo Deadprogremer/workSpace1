@@ -1,0 +1,11 @@
+@media (max-width:992px) {
+    .sidebar{
+        display: none;
+    }
+    .main{
+        width: 100vw;
+    }
+    header{
+        display: flex;
+    }
+}

@@ -1,0 +1,9 @@
+@media (max-width:600px) {
+    .main .band article{
+        width: 100%;
+    }
+    .main .band .cards .card img{
+        width: 25vw;
+        height: 60vh;
+    }
+}

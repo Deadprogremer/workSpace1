@@ -1,0 +1,38 @@
+@media (max-width:600px) {
+    header{
+        height: 80px;
+    }
+    nav ul li a{
+        font-size: 3vw;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav ul i{
+        display: block;
+    }
+    nav img{
+        width: 30%;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .left h1{
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    .left p{
+        width: 90%;
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .left button{
+        padding: 3vw 5vw;
+        font-size: 7vw;
+    }
+    .left,
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+}

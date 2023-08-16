@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:(red);
+    --main-color1:(white);   
+    --main-color2:(black);   
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content : center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+button{
+    width: 150px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border: 20px solid red;
+    transition: all 1s ease;
+}
+button:hover{
+    transition: all 1s ease;
+    border: 30px solid black;
+    background-color: red;
+}
+.header{
+    animation: slideleft 4s ease;
+    animation: slideright 4s ease;
+    transition: all 4s ease;
+}
+@keyframes slideleft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes slideright {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

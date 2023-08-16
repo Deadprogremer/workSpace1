@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:#33ffbd  ;
+    }
+    .time{
+        width: 500px;
+        height: 200px;
+        margin-top: 100px;
+        margin-left: 400px;
+        padding-top: 150px;
+        border: solid 2px black; 
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        background-color: transparent;
+        border-radius: 10%;
+        box-shadow: 10px 10px 10px 10px #000;
+        animation: animate 5s ease 0s ;
+        transition: all ease 5s;
+    }
+    @keyframes animate {
+        0%{
+            margin-left: 200px;
+            opacity: 0px;
+        }
+        25%{
+            margin-left: 100px;
+            opacity: 0.8px;
+        }
+        50%{
+            margin-left: 50px;
+            opacity: 1px;
+        }
+        75%{
+            margin-left: 25px;
+            opacity: 2px;
+        }
+    }
+
+</style>
+<body>
+    <div class="time">
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">00</span>
+        <span id="am"><sub>AM</sub></span>
+    </div>
+    <script>
+        setInterval(time,1000);
+        function time(){
+            var hours=new Date().getHours();
+            var minutes=new Date().getMinutes();
+            var seconds=new Date().getSeconds();
+            if(hours>=12){
+                hours=hours-12;
+                document.getElementById("am").innerHTML="<sub>PM</sub>";
+            }
+            document.getElementById("hours").innerHTML=hours+":";
+            document.getElementById("minutes").innerHTML=minutes+":";
+            document.getElementById("seconds").innerHTML=seconds;
+        } 
+    </script>
+</body>
+</html>

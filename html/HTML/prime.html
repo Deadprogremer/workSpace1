@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function countprime(){
+        for(var i=2;i<=600;i++){
+            isprime=true;
+            // should not be multiple of 2 and 3
+            for(var j=2;j<i;j++){
+                if(i%j===0){
+                    isprime=false;
+                    break;
+                }
+            }
+            if(isprime===true){
+                document.writeln(i);
+            }
+        }
+    }
+</script>
+<style>
+    body{
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        background: rgb(2,0,36);
+        background: linear-gradient( rgba(2,0,36,1) 0% left, rgba(0, 0, 255, 0.884) 30% top, rgba(255, 0, 0, 0.829) 62% right);
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        margin: 300px 50px 100px 570px;
+        border-radius: 10px;
+        border-color: red;
+        background: rgb(2,0,36);
+        background: linear-gradient( rgba(2,0,36,1) 0% left, rgba(0, 0, 255, 0.884) 30% top, rgba(255, 0, 0, 0.829) 62% right);
+        color: rgba(0, 255, 0, 0.767);
+    }
+</style>
+<body>
+    <button   onmouseover="countprime()">move mouse here to count prime upto 600</button>
+</body>
+</html>
